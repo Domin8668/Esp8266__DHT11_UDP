@@ -6,10 +6,10 @@
 #include <DHT_U.h>
    
 // Set WiFi credentials
-#define WIFI_SSID "<SSID>"
-#define WIFI_PASS "<Password>"
-#define UDP_PORT <Port>
-IPAddress ip(<octet1>, <octet2>, <octet2>, <octet4>);
+#define WIFI_SSID "Dunder Mifflin Paper Company"
+#define WIFI_PASS "Michael_Scott"
+#define UDP_PORT 4210
+IPAddress ip(192, 168, 1, 18);
 const unsigned int writeInterval = 5000;
 
 // DHT config.
@@ -65,8 +65,6 @@ void setup() {
 }
    
 void loop() {
-  //delay(delayMS);
-
   // Get temperature event and print its value.
   sensors_event_t event;  
   dht.temperature().getEvent(&event);
