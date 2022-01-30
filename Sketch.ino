@@ -6,10 +6,10 @@
 #include <DHT_U.h>
    
 // Set WiFi credentials
-#define WIFI_SSID "Dunder Mifflin Paper Company"
-#define WIFI_PASS "Michael_Scott"
-#define UDP_PORT 4210
-IPAddress ip(192, 168, 1, 18);
+#define WIFI_SSID ""
+#define WIFI_PASS ""
+#define UDP_PORT 
+IPAddress ip(192, 168, 1, 1);
 const unsigned int writeInterval = 5000;
 
 // DHT config.
